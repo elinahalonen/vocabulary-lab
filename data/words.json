@@ -1,0 +1,695 @@
+{
+  "schemaVersion": 1,
+  "notes": "All definitions and examples are AI-drafted originals, not copied from any dictionary. Every entry has verification.status = \"ai_draft\" until a person checks it against WSJP or SJP PWN. provenance says where the word came from: \"marta_example\" = named in the discovery conversation, \"ai_suggested\" = proposed by the assistant.",
+  "words": [
+    {
+      "id": "adekwatny",
+      "lemma": "adekwatny",
+      "pos": "adjective",
+      "difficulty": 1,
+      "register": "general",
+      "senses": [
+        {
+          "definition": "odpowiedni do czegoś; dobrze dopasowany do sytuacji, potrzeb albo skali problemu",
+          "examples": [
+            "Kara powinna być adekwatna do przewinienia.",
+            "To nie jest adekwatna odpowiedź na moje pytanie."
+          ]
+        }
+      ],
+      "origin": { "lang": "la", "etymon": "adaequatus", "gloss": "zrównany, dopasowany" },
+      "related": { "synonyms": ["stosowny", "odpowiedni"], "antonyms": ["nieadekwatny"], "derived": ["adekwatność", "adekwatnie"] },
+      "provenance": "marta_example",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "ambiwalentny",
+      "lemma": "ambiwalentny",
+      "pos": "adjective",
+      "difficulty": 2,
+      "register": "bookish",
+      "senses": [
+        {
+          "definition": "o uczuciach i postawach: łączący jednocześnie sprzeczne odczucia, np. sympatię i niechęć",
+          "examples": [
+            "Mam ambiwalentny stosunek do tego miasta: zachwyca mnie i męczy jednocześnie.",
+            "Wiadomość o przeprowadzce przyjęła z ambiwalentnymi uczuciami."
+          ]
+        }
+      ],
+      "origin": { "lang": "la", "etymon": "ambi- + valens", "gloss": "z obu stron + mający siłę", "note": "Pojęcie ambiwalencji wprowadził do psychiatrii Eugen Bleuler na początku XX wieku." },
+      "related": { "synonyms": ["dwojaki", "niejednoznaczny"], "antonyms": [], "derived": ["ambiwalencja"] },
+      "provenance": "marta_example",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "konsternacja",
+      "lemma": "konsternacja",
+      "pos": "noun",
+      "gender": "f",
+      "difficulty": 2,
+      "register": "bookish",
+      "senses": [
+        {
+          "definition": "zmieszanie i zakłopotanie wywołane czymś nieoczekiwanym albo niezręcznym",
+          "examples": [
+            "Jego pytanie wywołało na sali konsternację.",
+            "Ku konsternacji gości gospodarz zasnął przy stole."
+          ]
+        }
+      ],
+      "origin": { "lang": "la", "etymon": "consternatio", "gloss": "przerażenie, osłupienie", "note": "Po łacinie słowo oznaczało silny lęk; po polsku chodzi raczej o zakłopotanie." },
+      "related": { "synonyms": ["zmieszanie", "zakłopotanie", "osłupienie"], "antonyms": [], "derived": ["skonsternowany"] },
+      "provenance": "marta_example",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "paradoks",
+      "lemma": "paradoks",
+      "pos": "noun",
+      "gender": "m",
+      "difficulty": 1,
+      "register": "general",
+      "senses": [
+        {
+          "definition": "twierdzenie lub sytuacja, które wydają się sprzeczne albo niedorzeczne, a mimo to okazują się prawdziwe lub możliwe",
+          "examples": [
+            "Paradoksem jest, że im więcej mamy czasu, tym trudniej nam cokolwiek zacząć.",
+            "Paradoks bliźniąt to jeden z najbardziej znanych przykładów z teorii względności."
+          ]
+        }
+      ],
+      "origin": { "lang": "grc", "etymon": "parádoxos", "gloss": "sprzeczny z przyjętym mniemaniem", "note": "Od para ‘wbrew’ i doxa ‘mniemanie’." },
+      "related": { "synonyms": [], "antonyms": [], "derived": ["paradoksalny", "paradoksalnie"] },
+      "provenance": "marta_example",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "pragmatyczny",
+      "lemma": "pragmatyczny",
+      "pos": "adjective",
+      "difficulty": 1,
+      "register": "general",
+      "senses": [
+        {
+          "definition": "kierujący się praktycznymi skutkami i skutecznością bardziej niż zasadami, ideałami czy emocjami",
+          "examples": [
+            "Zamiast się kłócić, wybrali pragmatyczne rozwiązanie: każdy płaci za siebie.",
+            "Jest pragmatyczką: najpierw sprawdza, co zadziała."
+          ]
+        }
+      ],
+      "origin": { "lang": "grc", "etymon": "pragmatikós", "gloss": "dotyczący spraw i czynów", "note": "W językoznawstwie pragmatyka to dział badający, jak używamy języka w konkretnych sytuacjach." },
+      "related": { "synonyms": ["praktyczny", "rzeczowy"], "antonyms": [], "derived": ["pragmatyzm", "pragmatyk", "pragmatyczka"] },
+      "provenance": "marta_example",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "egzaltacja",
+      "lemma": "egzaltacja",
+      "pos": "noun",
+      "gender": "f",
+      "difficulty": 3,
+      "register": "bookish",
+      "senses": [
+        {
+          "definition": "przesadne, nienaturalnie podniosłe okazywanie uczuć albo zachwytu",
+          "examples": [
+            "Opowiadała o wakacjach z taką egzaltacją, że trudno było jej uwierzyć.",
+            "Recenzja była pełna egzaltacji, ale brakowało w niej konkretów."
+          ]
+        }
+      ],
+      "origin": { "lang": "la", "etymon": "exaltatio", "gloss": "wywyższenie, uniesienie" },
+      "note": "Fałszywy przyjaciel: angielskie exaltation ma zwykle pozytywny sens, a polska egzaltacja jest krytyczna.",
+      "related": { "synonyms": ["afektacja", "przesada"], "antonyms": [], "derived": ["egzaltowany"] },
+      "provenance": "marta_example",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "dygresja",
+      "lemma": "dygresja",
+      "pos": "noun",
+      "gender": "f",
+      "difficulty": 1,
+      "register": "general",
+      "senses": [
+        {
+          "definition": "chwilowe odejście w wypowiedzi lub tekście od głównego tematu, żeby powiedzieć coś pobocznego",
+          "examples": [
+            "Pozwólcie na krótką dygresję, zanim wrócę do tematu.",
+            "Wykład składał się głównie z dygresji, ale słuchało się go świetnie."
+          ]
+        }
+      ],
+      "origin": { "lang": "la", "etymon": "digressio", "gloss": "odejście, oddalenie się" },
+      "related": { "synonyms": [], "antonyms": [], "derived": ["dygresyjny"] },
+      "provenance": "ai_suggested",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "eufemizm",
+      "lemma": "eufemizm",
+      "pos": "noun",
+      "gender": "m",
+      "difficulty": 1,
+      "register": "general",
+      "senses": [
+        {
+          "definition": "łagodniejsze, oględne słowo lub wyrażenie użyte zamiast dosadnego, przykrego albo drażliwego",
+          "examples": [
+            "„Optymalizacja zatrudnienia” to eufemizm, który zwykle oznacza zwolnienia.",
+            "Mówił w eufemizmach, żeby nikogo nie urazić."
+          ]
+        }
+      ],
+      "origin": { "lang": "grc", "etymon": "euphēmismós", "gloss": "mówienie dobrych słów", "note": "Od eu ‘dobrze’ i phēmí ‘mówię’." },
+      "related": { "synonyms": [], "antonyms": ["dysfemizm"], "derived": ["eufemistyczny", "eufemistycznie"] },
+      "provenance": "ai_suggested",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "ewentualny",
+      "lemma": "ewentualny",
+      "pos": "adjective",
+      "difficulty": 1,
+      "register": "general",
+      "senses": [
+        {
+          "definition": "możliwy; mogący się zdarzyć w pewnych okolicznościach, ale niepewny",
+          "examples": [
+            "Na ewentualne pytania odpowiem po prezentacji.",
+            "Ewentualne zmiany w planie zgłaszajcie do piątku."
+          ]
+        }
+      ],
+      "origin": { "lang": "la", "etymon": "eventus", "gloss": "zdarzenie, wynik" },
+      "note": "Fałszywy przyjaciel: angielskie eventual znaczy ‘ostateczny’, a polskie ewentualny ‘możliwy’.",
+      "related": { "synonyms": ["możliwy", "potencjalny"], "antonyms": [], "derived": ["ewentualnie", "ewentualność"] },
+      "provenance": "ai_suggested",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "sceptyczny",
+      "lemma": "sceptyczny",
+      "pos": "adjective",
+      "difficulty": 1,
+      "register": "general",
+      "senses": [
+        {
+          "definition": "nieufny; wątpiący w prawdziwość lub powodzenie czegoś, dopóki nie zobaczy przekonujących dowodów",
+          "examples": [
+            "Jestem sceptyczna wobec obietnic, że to się uda w tydzień.",
+            "Lekarze przyjęli te doniesienia sceptycznie."
+          ]
+        }
+      ],
+      "origin": { "lang": "grc", "etymon": "skeptikós", "gloss": "rozważający, badawczy" },
+      "related": { "synonyms": ["nieufny", "powściągliwy"], "antonyms": ["łatwowierny"], "derived": ["sceptycyzm", "sceptyk", "sceptycznie"] },
+      "provenance": "ai_suggested",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "konformizm",
+      "lemma": "konformizm",
+      "pos": "noun",
+      "gender": "m",
+      "difficulty": 2,
+      "register": "bookish",
+      "senses": [
+        {
+          "definition": "postawa polegająca na bezkrytycznym dostosowywaniu się do poglądów i zachowań większości",
+          "examples": [
+            "Z konformizmu nikt nie odważył się zaprotestować.",
+            "Krytykowała konformizm swojego pokolenia, ale sama też płynęła z prądem."
+          ]
+        }
+      ],
+      "origin": { "lang": "la", "etymon": "conformis", "gloss": "podobny, zgodny" },
+      "related": { "synonyms": [], "antonyms": ["nonkonformizm"], "derived": ["konformista", "konformistka", "konformistyczny"] },
+      "provenance": "ai_suggested",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "indolencja",
+      "lemma": "indolencja",
+      "pos": "noun",
+      "gender": "f",
+      "difficulty": 2,
+      "register": "bookish",
+      "senses": [
+        {
+          "definition": "nieudolność połączona z bezczynnością; brak umiejętności albo chęci, by się czymś należycie zająć",
+          "examples": [
+            "Opóźnienie wynikało z indolencji urzędników, a nie z braku pieniędzy.",
+            "Krytykowano indolencję władz w czasie powodzi."
+          ]
+        }
+      ],
+      "origin": { "lang": "la", "etymon": "indolentia", "gloss": "niewrażliwość na ból", "note": "Od in- ‘nie’ i dolere ‘boleć’. Polskie znaczenie przesunęło się w stronę niezaradności." },
+      "related": { "synonyms": ["nieudolność", "niedołęstwo", "opieszałość"], "antonyms": [], "derived": ["indolentny"] },
+      "provenance": "ai_suggested",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "prowizoryczny",
+      "lemma": "prowizoryczny",
+      "pos": "adjective",
+      "difficulty": 1,
+      "register": "general",
+      "senses": [
+        {
+          "definition": "tymczasowy, zrobiony doraźnie, zanim powstanie coś trwałego albo porządnego",
+          "examples": [
+            "Na razie przez strumień prowadzi prowizoryczny most z desek.",
+            "To tylko prowizoryczne rozwiązanie, dopóki nie przyjdzie hydraulik."
+          ]
+        }
+      ],
+      "origin": { "lang": "la", "etymon": "provisorius", "gloss": "tymczasowy", "note": "Od providere ‘przewidywać, zawczasu się troszczyć’." },
+      "related": { "synonyms": ["tymczasowy", "doraźny"], "antonyms": ["trwały"], "derived": ["prowizorka", "prowizorycznie"] },
+      "provenance": "ai_suggested",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "arbitralny",
+      "lemma": "arbitralny",
+      "pos": "adjective",
+      "difficulty": 2,
+      "register": "bookish",
+      "senses": [
+        {
+          "definition": "oparty na czyjejś woli albo przypadkowym wyborze, a nie na regułach, uzasadnieniu czy zgodzie innych",
+          "examples": [
+            "Decyzja o zwolnieniu wydawała się zupełnie arbitralna.",
+            "Ten podział jest arbitralny: równie dobrze można by go przeprowadzić inaczej."
+          ]
+        }
+      ],
+      "origin": { "lang": "la", "etymon": "arbitrarius", "gloss": "zależny od czyjejś woli", "note": "Od arbiter ‘rozjemca, sędzia’." },
+      "related": { "synonyms": ["dowolny", "samowolny"], "antonyms": [], "derived": ["arbitralnie", "arbitralność"] },
+      "provenance": "ai_suggested",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "ekscentryczny",
+      "lemma": "ekscentryczny",
+      "pos": "adjective",
+      "difficulty": 1,
+      "register": "general",
+      "senses": [
+        {
+          "definition": "o osobie lub zachowaniu: dziwaczny, wyraźnie odbiegający od przyjętych zwyczajów, często w sposób zwracający uwagę",
+          "examples": [
+            "Jej ekscentryczny wujek hodował w mieszkaniu pawie.",
+            "Ekscentryczny styl ubierania się stał się jego znakiem rozpoznawczym."
+          ]
+        }
+      ],
+      "origin": { "lang": "la", "etymon": "eccentricus", "gloss": "mający środek poza środkiem", "note": "Z greckiego ek ‘poza’ i kéntron ‘środek’. W technice ekscentryczny znaczy ‘położony poza osią’." },
+      "related": { "synonyms": ["dziwaczny", "oryginalny"], "antonyms": [], "derived": ["ekscentryk", "ekscentryczka", "ekscentryczność"] },
+      "provenance": "ai_suggested",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "hermetyczny",
+      "lemma": "hermetyczny",
+      "pos": "adjective",
+      "difficulty": 2,
+      "register": "general",
+      "senses": [
+        {
+          "definition": "szczelnie zamknięty, nieprzepuszczający powietrza ani wody",
+          "examples": ["Przechowuj kawę w hermetycznym pojemniku."]
+        },
+        {
+          "label": "przen.",
+          "definition": "zamknięty dla osób z zewnątrz; zrozumiały tylko dla wtajemniczonych",
+          "examples": [
+            "To dość hermetyczne środowisko: trudno tam wejść bez znajomości.",
+            "Artykuł napisano hermetycznym językiem specjalistów."
+          ]
+        }
+      ],
+      "origin": { "lang": "la", "etymon": "hermeticus", "gloss": "dotyczący Hermesa", "note": "Od Hermesa Trismegistosa, legendarnego patrona alchemików, któremu przypisywano sztukę szczelnego zamykania naczyń." },
+      "related": { "synonyms": ["szczelny", "zamknięty"], "antonyms": [], "derived": ["hermetycznie", "hermetyczność"] },
+      "provenance": "ai_suggested",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "kuriozalny",
+      "lemma": "kuriozalny",
+      "pos": "adjective",
+      "difficulty": 2,
+      "register": "bookish",
+      "senses": [
+        {
+          "definition": "tak dziwny albo niedorzeczny, że aż śmieszny",
+          "examples": [
+            "Urzędnik podał kuriozalne uzasadnienie odmowy.",
+            "Doszło do kuriozalnej sytuacji: na zebranie o punktualności wszyscy się spóźnili."
+          ]
+        }
+      ],
+      "origin": { "lang": "la", "etymon": "curiosus", "gloss": "ciekawy; osobliwy" },
+      "related": { "synonyms": ["absurdalny", "groteskowy"], "antonyms": [], "derived": ["kuriozum", "kuriozalnie"] },
+      "provenance": "ai_suggested",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "lapidarny",
+      "lemma": "lapidarny",
+      "pos": "adjective",
+      "difficulty": 2,
+      "register": "bookish",
+      "senses": [
+        {
+          "definition": "bardzo zwięzły, a przy tym trafny i treściwy",
+          "examples": [
+            "Na długi mail odpowiedziała lapidarnie: „Nie”.",
+            "Jego lapidarny komentarz podsumował całą dyskusję."
+          ]
+        }
+      ],
+      "origin": { "lang": "la", "etymon": "lapidarius", "gloss": "kamienny", "note": "Od lapis ‘kamień’. Napisy ryte w kamieniu musiały być krótkie." },
+      "related": { "synonyms": ["zwięzły", "treściwy"], "antonyms": ["rozwlekły"], "derived": ["lapidarnie", "lapidarność"] },
+      "provenance": "ai_suggested",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "meander",
+      "lemma": "meander",
+      "pos": "noun",
+      "gender": "m",
+      "difficulty": 2,
+      "register": "general",
+      "senses": [
+        {
+          "definition": "zakole rzeki, zwłaszcza jedno z wielu następujących po sobie",
+          "examples": ["Rzeka tworzy tu malownicze meandry."]
+        },
+        {
+          "label": "przen., zwykle lm.",
+          "definition": "zawiłości; kręte, trudne do prześledzenia drogi czegoś",
+          "examples": ["Nie każdy odnajdzie się w meandrach przepisów podatkowych."]
+        }
+      ],
+      "origin": { "lang": "grc", "etymon": "Maíandros", "gloss": "nazwa rzeki", "note": "Od krętej rzeki w Azji Mniejszej, dziś Büyük Menderes w Turcji." },
+      "related": { "synonyms": ["zakole", "zawiłość"], "antonyms": [], "derived": ["meandrować"] },
+      "provenance": "ai_suggested",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "nonszalancja",
+      "lemma": "nonszalancja",
+      "pos": "noun",
+      "gender": "f",
+      "difficulty": 2,
+      "register": "bookish",
+      "senses": [
+        {
+          "definition": "swoboda w zachowaniu połączona z lekceważeniem form, zasad albo innych ludzi",
+          "examples": [
+            "Z nonszalancją oparł nogi na biurku szefa.",
+            "Ta nonszalancja wobec terminów zaczyna być problemem."
+          ]
+        }
+      ],
+      "origin": { "lang": "fr", "etymon": "nonchalance", "gloss": "niedbałość, obojętność" },
+      "note": "Bywa używane z odcieniem podziwu, gdy chodzi o elegancką swobodę, np. „nonszalancka elegancja”.",
+      "related": { "synonyms": ["niedbałość", "swoboda"], "antonyms": [], "derived": ["nonszalancki", "nonszalancko"] },
+      "provenance": "ai_suggested",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "pejoratywny",
+      "lemma": "pejoratywny",
+      "pos": "adjective",
+      "difficulty": 2,
+      "register": "bookish",
+      "senses": [
+        {
+          "definition": "o słowie lub określeniu: mający ujemne zabarwienie, wyrażający negatywną ocenę",
+          "examples": [
+            "„Babsztyl” to pejoratywne określenie kobiety.",
+            "W tym kontekście słowo „ambitny” zabrzmiało pejoratywnie."
+          ]
+        }
+      ],
+      "origin": { "lang": "la", "etymon": "peior", "gloss": "gorszy", "note": "Do polszczyzny prawdopodobnie przez francuskie péjoratif." },
+      "related": { "synonyms": ["deprecjonujący", "lekceważący"], "antonyms": ["melioratywny"], "derived": ["pejoratywnie"] },
+      "provenance": "ai_suggested",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "konotacja",
+      "lemma": "konotacja",
+      "pos": "noun",
+      "gender": "f",
+      "difficulty": 2,
+      "register": "bookish",
+      "senses": [
+        {
+          "definition": "dodatkowe skojarzenia i oceny, które słowo budzi oprócz swojego podstawowego znaczenia",
+          "examples": [
+            "„Dom” i „mieszkanie” znaczą coś podobnego, ale mają różne konotacje.",
+            "Słowo „układ” ma w polityce wyraźnie negatywne konotacje."
+          ]
+        }
+      ],
+      "origin": { "lang": "la", "etymon": "connotatio", "gloss": "współoznaczanie", "note": "Od con- ‘współ-’ i notare ‘oznaczać’." },
+      "related": { "synonyms": ["skojarzenie", "zabarwienie"], "antonyms": ["denotacja"], "derived": ["konotować"] },
+      "provenance": "ai_suggested",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "sarkazm",
+      "lemma": "sarkazm",
+      "pos": "noun",
+      "gender": "m",
+      "difficulty": 1,
+      "register": "general",
+      "senses": [
+        {
+          "definition": "złośliwa, gorzka ironia, często mająca kogoś urazić albo ośmieszyć",
+          "examples": [
+            "Powiedział z sarkazmem: „No, świetnie ci poszło”.",
+            "Jej sarkazm bywa zabawny, ale czasem rani."
+          ]
+        }
+      ],
+      "origin": { "lang": "grc", "etymon": "sarkasmós", "gloss": "gorzka drwina", "note": "Od sarkázein ‘szarpać mięso (jak psy)’, a stąd ‘gorzko drwić’." },
+      "related": { "synonyms": ["drwina", "zjadliwość"], "antonyms": [], "derived": ["sarkastyczny", "sarkastycznie"] },
+      "provenance": "ai_suggested",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "trywialny",
+      "lemma": "trywialny",
+      "pos": "adjective",
+      "difficulty": 2,
+      "register": "general",
+      "senses": [
+        {
+          "definition": "błahy, banalny; zbyt prosty, żeby poświęcać mu uwagę",
+          "examples": ["To trywialny problem, rozwiążemy go w pięć minut."]
+        },
+        {
+          "definition": "prostacki, ordynarny, nieprzyzwoity",
+          "examples": ["Rozmowa szybko zeszła na trywialne żarty."]
+        }
+      ],
+      "origin": { "lang": "la", "etymon": "trivialis", "gloss": "pospolity", "note": "Od trivium ‘miejsce, gdzie schodzą się trzy drogi’, czyli miejsce, w którym bywa każdy." },
+      "related": { "synonyms": ["błahy", "banalny"], "antonyms": [], "derived": ["trywialność", "trywializować"] },
+      "provenance": "ai_suggested",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "wirtuozeria",
+      "lemma": "wirtuozeria",
+      "pos": "noun",
+      "gender": "f",
+      "difficulty": 2,
+      "register": "bookish",
+      "senses": [
+        {
+          "definition": "mistrzowskie opanowanie jakiejś umiejętności, zwłaszcza gry na instrumencie",
+          "examples": [
+            "Słuchacze byli pod wrażeniem wirtuozerii skrzypaczki.",
+            "Ten tekst to językowa wirtuozeria: ani jednego zbędnego słowa."
+          ]
+        }
+      ],
+      "origin": { "lang": "it", "etymon": "virtuoso", "gloss": "biegły, mistrzowski", "note": "Od łacińskiego virtus ‘dzielność, cnota’." },
+      "related": { "synonyms": ["mistrzostwo", "biegłość"], "antonyms": [], "derived": ["wirtuoz", "wirtuozerski"] },
+      "provenance": "ai_suggested",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "efemeryczny",
+      "lemma": "efemeryczny",
+      "pos": "adjective",
+      "difficulty": 2,
+      "register": "bookish",
+      "senses": [
+        {
+          "definition": "krótkotrwały, szybko przemijający",
+          "examples": [
+            "Sława w internecie jest zwykle efemeryczna.",
+            "Ta efemeryczna moda zniknęła po jednym sezonie."
+          ]
+        }
+      ],
+      "origin": { "lang": "grc", "etymon": "ephḗmeros", "gloss": "trwający jeden dzień", "note": "Od epí ‘na’ i hēméra ‘dzień’." },
+      "related": { "synonyms": ["przelotny", "ulotny"], "antonyms": ["trwały"], "derived": ["efemeryda", "efemeryczność"] },
+      "provenance": "ai_suggested",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "dychotomia",
+      "lemma": "dychotomia",
+      "pos": "noun",
+      "gender": "f",
+      "difficulty": 3,
+      "register": "bookish",
+      "senses": [
+        {
+          "definition": "podział czegoś na dwie przeciwstawne, wzajemnie wykluczające się części",
+          "examples": [
+            "Dychotomia „kariera albo życie prywatne” wydaje mi się fałszywa.",
+            "Autor opiera całą książkę na dychotomii natury i kultury."
+          ]
+        }
+      ],
+      "origin": { "lang": "grc", "etymon": "dichotomía", "gloss": "przecięcie na dwoje" },
+      "related": { "synonyms": ["dwudzielność"], "antonyms": [], "derived": ["dychotomiczny"] },
+      "provenance": "ai_suggested",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "perfidny",
+      "lemma": "perfidny",
+      "pos": "adjective",
+      "difficulty": 2,
+      "register": "bookish",
+      "senses": [
+        {
+          "definition": "podstępny i wyrachowany w szkodzeniu innym, zwłaszcza pod pozorem życzliwości",
+          "examples": [
+            "To było perfidne kłamstwo, starannie przygotowane.",
+            "Perfidnie wykorzystał jej zaufanie."
+          ]
+        }
+      ],
+      "origin": { "lang": "la", "etymon": "perfidus", "gloss": "wiarołomny", "note": "Od fides ‘wiara, lojalność’." },
+      "related": { "synonyms": ["podstępny", "zdradziecki"], "antonyms": [], "derived": ["perfidia", "perfidnie"] },
+      "provenance": "ai_suggested",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "sybaryta",
+      "lemma": "sybaryta",
+      "pos": "noun",
+      "gender": "m",
+      "difficulty": 3,
+      "register": "bookish",
+      "senses": [
+        {
+          "definition": "człowiek zamiłowany w wygodach i zmysłowych przyjemnościach, żyjący w zbytku",
+          "examples": [
+            "Prawdziwy sybaryta: śniadanie tylko w łóżku i tylko ze świeżymi rogalikami.",
+            "W sobotę pozwalam sobie być sybarytką."
+          ]
+        }
+      ],
+      "origin": { "lang": "grc", "etymon": "Sybarítēs", "gloss": "mieszkaniec Sybaris", "note": "Sybaris była grecką kolonią w południowej Italii, której mieszkańcy słynęli z zamiłowania do luksusu." },
+      "related": { "synonyms": ["hedonista", "epikurejczyk"], "antonyms": ["asceta"], "derived": ["sybarytka", "sybarytyzm", "sybarycki"] },
+      "provenance": "ai_suggested",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "inklinacja",
+      "lemma": "inklinacja",
+      "pos": "noun",
+      "gender": "f",
+      "difficulty": 3,
+      "register": "bookish",
+      "senses": [
+        {
+          "definition": "skłonność, upodobanie albo naturalny pociąg do czegoś",
+          "examples": [
+            "Od dziecka miał inklinacje do muzyki.",
+            "Nie mam inklinacji do sportów zespołowych."
+          ]
+        }
+      ],
+      "origin": { "lang": "la", "etymon": "inclinatio", "gloss": "nachylenie, skłonność" },
+      "note": "W fizyce i astronomii inklinacja to także kąt nachylenia, np. orbity.",
+      "related": { "synonyms": ["skłonność", "predylekcja"], "antonyms": ["awersja"], "derived": [] },
+      "provenance": "ai_suggested",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "aprobata",
+      "lemma": "aprobata",
+      "pos": "noun",
+      "gender": "f",
+      "difficulty": 1,
+      "register": "general",
+      "senses": [
+        {
+          "definition": "zgoda i pozytywna ocena czyjegoś pomysłu, decyzji albo zachowania",
+          "examples": [
+            "Projekt zyskał aprobatę zarządu.",
+            "Kiwnęła głową z aprobatą."
+          ]
+        }
+      ],
+      "origin": { "lang": "la", "etymon": "approbatio", "gloss": "uznanie, zatwierdzenie" },
+      "related": { "synonyms": ["akceptacja", "uznanie"], "antonyms": ["dezaprobata"], "derived": ["aprobować"] },
+      "provenance": "ai_suggested",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "resentyment",
+      "lemma": "resentyment",
+      "pos": "noun",
+      "gender": "m",
+      "difficulty": 3,
+      "register": "bookish",
+      "senses": [
+        {
+          "definition": "długo żywiona uraza i wrogość wobec tych, których uważa się za winnych własnych krzywd albo niepowodzeń",
+          "examples": [
+            "Jego krytyka nie wynikała z troski, tylko z resentymentu.",
+            "Polityka resentymentu żeruje na poczuciu krzywdy."
+          ]
+        }
+      ],
+      "origin": { "lang": "fr", "etymon": "ressentiment", "gloss": "uraza", "note": "Jako pojęcie filozoficzne spopularyzował je Fryderyk Nietzsche." },
+      "related": { "synonyms": ["uraza", "zawiść"], "antonyms": [], "derived": [] },
+      "provenance": "ai_suggested",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    },
+    {
+      "id": "elokwentny",
+      "lemma": "elokwentny",
+      "pos": "adjective",
+      "difficulty": 1,
+      "register": "general",
+      "senses": [
+        {
+          "definition": "wymowny; umiejący mówić płynnie, swobodnie i przekonująco",
+          "examples": [
+            "Była najbardziej elokwentną osobą w zespole.",
+            "Elokwentnie wybrnął z niezręcznego pytania."
+          ]
+        }
+      ],
+      "origin": { "lang": "la", "etymon": "eloquens", "gloss": "wymowny" },
+      "related": { "synonyms": ["wymowny", "krasomówczy"], "antonyms": [], "derived": ["elokwencja", "elokwentnie"] },
+      "provenance": "ai_suggested",
+      "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
+    }
+  ]
+}
