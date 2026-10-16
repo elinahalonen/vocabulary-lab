@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Słowa na próbę</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<style>
+/* Layout: one narrow column, one word at a time; the word card is the only framed object. */
+:root {
+  --paper: #f3f5f8; --surface: #ffffff; --ink: #1b2230; --muted: #5a6476; --line: #d6dce5;
+  --accent: #2b5788; --accent-ink: #ffffff; --accent-soft: #e2eaf4;
+  --font-word: "Literata", Georgia, "Times New Roman", serif;
+  --font-ui: "Atkinson Hyperlegible Next", "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #11151c; --surface: #181e28; --ink: #e6eaf0; --muted: #9ba6b8; --line: #2b3442;
+    --accent: #8db4e4; --accent-ink: #0f1622; --accent-soft: #1e2b3d; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #11151c; --surface: #181e28; --ink: #e6eaf0; --muted: #9ba6b8; --line: #2b3442;
+  --accent: #8db4e4; --accent-ink: #0f1622; --accent-soft: #1e2b3d; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-ui);
+  font-size: 1.0625rem; line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 24px 48px;
+}
+#app { max-width: 34rem; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+h1 { font-family: var(--font-word); font-weight: 600; font-size: 1.6rem; line-height: 1.2; margin: 0; text-wrap: balance; }
+h1:focus { outline: none; }
+p { margin: 0; }
+.muted { color: var(--muted); }
+.small { font-size: 0.9rem; }
+.top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.brand { font-family: var(--font-word); font-style: italic; color: var(--muted); }
+.count { color: var(--muted); font-variant-numeric: tabular-nums; font-size: 0.9rem; }
+.bar { height: 4px; background: var(--line); border-radius: 2px; overflow: hidden; }
+.bar span { display: block; height: 100%; background: var(--accent); }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 28px 22px; display: flex; flex-direction: column; gap: 18px; }
+.word { font-family: var(--font-word); font-size: clamp(2.1rem, 9vw, 3rem); font-weight: 600; line-height: 1.1; overflow-wrap: anywhere; }
+.meaning { font-size: 1.15rem; }
+.en { font-size: 0.9rem; color: var(--muted); font-style: italic; }
+.q { font-weight: 600; }
+.options { display: flex; flex-direction: column; gap: 10px; }
+.btn {
+  font: inherit; min-height: 50px; padding: 10px 18px; border-radius: 12px; cursor: pointer; text-align: left;
+  border: 1.5px solid var(--line); background: var(--surface); color: var(--ink);
+}
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); font-weight: 600; text-align: center; border-radius: 999px; }
+.btn.link { border: 0; background: none; min-height: 0; padding: 4px 0; color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.btn.chosen { border-color: var(--accent); background: var(--accent-soft); }
+.row { display: flex; gap: 10px; flex-wrap: wrap; }
+.row .btn { flex: 1 1 10rem; text-align: center; }
+.check { display: flex; gap: 10px; align-items: center; font-size: 0.95rem; color: var(--muted); }
+.check input { width: 22px; height: 22px; accent-color: var(--accent); }
+textarea { width: 100%; font: inherit; font-size: 0.95rem; padding: 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); }
+button:focus-visible, textarea:focus-visible, input:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.foot { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 0.85rem; }
+.summary { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.summary li { display: flex; flex-direction: column; gap: 2px; border-bottom: 1px solid var(--line); padding-block: 8px; }
+.summary b { font-family: var(--font-word); }
+</style>
+
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+const WORDS = [{"w": "antycypacja", "pl": "przewidywanie tego, co nastąpi, i wyprzedzanie tego", "en": "anticipation", "g": "bookish"}, {"w": "pejoratywny", "pl": "o słowie: mający ujemne zabarwienie, oceniający negatywnie", "en": "pejorative", "g": "bookish"}, {"w": "deliberacje", "pl": "długie, dokładne rozważanie jakiejś sprawy", "en": "deliberations", "g": "bookish"}, {"w": "arbitralny", "pl": "narzucony samowolnie, bez liczenia się z innymi i bez uzasadnienia (nie: „sprawiedliwy”)", "en": "arbitrary (often misused to mean 'fair')", "g": "trap"}, {"w": "sekwestr", "pl": "sądowe zajęcie majątku albo oddanie spornej rzeczy pod zarząd do czasu wyroku", "en": "sequestration", "g": "public"}, {"w": "dezyderat", "pl": "formalnie sformułowane życzenie lub postulat skierowany do władz", "en": "formal request to the authorities", "g": "public"}, {"w": "démarche", "pl": "oficjalne wystąpienie dyplomatyczne jednego państwa wobec drugiego, np. protest", "en": "démarche: formal diplomatic representation", "g": "public"}, {"w": "emfatyczny", "pl": "mocno podkreślony, wyrazisty; czasem przesadnie uczuciowy", "en": "emphatic", "g": "bookish"}, {"w": "reprymenda", "pl": "ostre upomnienie od kogoś, kto stoi wyżej", "en": "reprimand", "g": "bookish"}, {"w": "hydroliza", "pl": "rozkład związku chemicznego pod wpływem wody", "en": "hydrolysis", "g": "science"}, {"w": "promulgacja", "pl": "oficjalne ogłoszenie ustawy, od którego zaczyna ona obowiązywać", "en": "promulgation", "g": "public"}, {"w": "akredytacja", "pl": "oficjalne upoważnienie dyplomaty lub dziennikarza do pracy w danym miejscu", "en": "accreditation", "g": "public"}, {"w": "desygnować", "pl": "wyznaczyć kogoś na stanowisko lub do jakiejś funkcji", "en": "to designate, nominate", "g": "public"}, {"w": "rudymentarny", "pl": "podstawowy, elementarny; także: szczątkowy", "en": "rudimentary", "g": "bookish"}, {"w": "predylekcja", "pl": "szczególne upodobanie, skłonność do czegoś", "en": "predilection", "g": "bookish"}, {"w": "sublimacja", "pl": "przejście ze stanu stałego w gazowy z pominięciem cieczy", "en": "sublimation", "g": "science"}, {"w": "amoniak", "pl": "bezbarwny gaz o ostrym zapachu, związek azotu z wodorem", "en": "ammonia", "g": "science"}, {"w": "deprecjacja", "pl": "spadek wartości czegoś, np. waluty", "en": "depreciation", "g": "public"}, {"w": "asumpt", "pl": "pobudka, impuls do czegoś; zwykle: dać asumpt do czegoś", "en": "impetus; 'to give rise to'", "g": "bookish"}, {"w": "ratyfikacja", "pl": "zatwierdzenie umowy międzynarodowej przez parlament lub prezydenta", "en": "ratification", "g": "public"}, {"w": "nowelizacja", "pl": "częściowa zmiana obowiązującej ustawy", "en": "amendment (of a law)", "g": "public"}, {"w": "eksterytorialność", "pl": "wyłączenie spod prawa danego kraju, np. ambasad i dyplomatów", "en": "extraterritoriality", "g": "public"}, {"w": "dieta", "pl": "specjalny sposób odżywiania, np. leczniczy albo odchudzający (według purystów nie: po prostu „to, co jemy”)", "en": "a special diet (purists: not just 'what one eats')", "g": "trap"}, {"w": "agrément", "pl": "wstępna zgoda państwa na przyjęcie konkretnej osoby jako ambasadora", "en": "agrément: host country's consent to an ambassador", "g": "public"}, {"w": "dezawuować", "pl": "publicznie odciąć się od czyichś słów lub działań, cofnąć komuś poparcie", "en": "to disavow, publicly distance oneself from", "g": "bookish"}, {"w": "supozycja", "pl": "przypuszczenie, domniemanie", "en": "supposition", "g": "bookish"}, {"w": "trywialny", "pl": "banalny, oczywisty; także: prostacki, ordynarny", "en": "trivial; also vulgar", "g": "trap"}, {"w": "katalizator", "pl": "substancja, która przyspiesza reakcję chemiczną, sama się nie zużywając", "en": "catalyst", "g": "science"}, {"w": "egzaltacja", "pl": "przesadne, nienaturalnie podniosłe okazywanie uczuć", "en": "over-the-top gushing (not 'exaltation')", "g": "bookish"}, {"w": "konsternacja", "pl": "zmieszanie i zakłopotanie wywołane czymś nieoczekiwanym", "en": "embarrassed confusion, dismay", "g": "bookish"}, {"w": "resentyment", "pl": "długo żywiona uraza i niechęć (nie: „odrodzenie się uczuć”)", "en": "lingering grudge (often misread as 'renewed feeling')", "g": "trap"}, {"w": "permisywizm", "pl": "postawa bardzo daleko idącej pobłażliwości wobec norm i zakazów", "en": "permissiveness", "g": "public"}, {"w": "stricte", "pl": "ściśle, w ścisłym znaczeniu", "en": "strictly (speaking)", "g": "bookish"}, {"w": "nobliwy", "pl": "dystyngowany, budzący szacunek; zwykle o starszej osobie", "en": "dignified, distinguished", "g": "bookish"}, {"w": "atencja", "pl": "szczególny szacunek i względy okazywane komuś", "en": "deference, respectful attention", "g": "bookish"}, {"w": "defetyzm", "pl": "brak wiary w powodzenie, nastawienie na porażkę", "en": "defeatism", "g": "bookish"}, {"w": "labilny", "pl": "niestały, łatwo się zmieniający", "en": "unstable, changeable", "g": "bookish"}, {"w": "arywista", "pl": "ktoś, kto za wszelką cenę dąży do pieniędzy i stanowisk", "en": "ruthless careerist, social climber", "g": "bookish"}, {"w": "ambiwalentny", "pl": "odczuwający albo budzący jednocześnie sprzeczne uczucia", "en": "ambivalent", "g": "bookish"}, {"w": "introspekcja", "pl": "przyglądanie się własnym myślom i uczuciom", "en": "introspection", "g": "bookish"}];
+const KEY = 'vocablab.calibration.v1';
+const FAMILIAR = [
+  ['uses', 'Znam i używam'],
+  ['knows', 'Znam, ale nie używam'],
+  ['unsure', 'Kojarzę, ale nie jestem pewna'],
+  ['new', 'Nie znam'],
+];
+
+let state = { i: -1, answers: {}, note: '', en: false };
+try { const s = JSON.parse(localStorage.getItem(KEY)); if (s && s.answers) state = { ...state, ...s }; } catch {}
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch {} };
+
+function h(tag, attrs = {}, ...kids) {
+  const el = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k.startsWith('on')) el.addEventListener(k.slice(2), v);
+    else if (k === 'class') el.className = v;
+    else if (v === true) el.setAttribute(k, '');
+    else if (v !== false && v != null) el.setAttribute(k, v);
+  }
+  for (const c of kids.flat(Infinity)) if (c != null && c !== false) el.append(c);
+  return el;
+}
+
+function go(i) { state.i = i; save(); render(); window.scrollTo(0, 0); const t = document.querySelector('h1, .word'); if (t) { t.tabIndex = -1; t.focus({ preventScroll: true }); } }
+
+function render() {
+  const app = document.getElementById('app');
+  const screen = state.i < 0 ? intro() : state.i >= WORDS.length ? done() : card(state.i);
+  app.replaceChildren(screen, footer());
+}
+
+function intro() {
+  const started = Object.keys(state.answers).length > 0;
+  return h('section', { class: 'card' },
+    h('h1', {}, 'Czterdzieści słów na próbę'),
+    h('p', {}, 'Zanim powstanie prawdziwa strona, chcemy sprawdzić, jakie słowa są dla Ciebie ciekawe. Przy każdym słowie powiedz najpierw, czy je znasz. Potem zobaczysz krótkie wyjaśnienie i zdecydujesz, czy chcesz go używać.'),
+    h('p', { class: 'muted' }, 'Zajmie to około 5 minut. Nie ma złych odpowiedzi, to nie jest test. Możesz przerwać i wrócić później.'),
+    h('button', { class: 'btn primary', type: 'button', onclick: () => go(firstUnanswered()) }, started ? 'Kontynuuj' : 'Zaczynamy'),
+  );
+}
+
+function firstUnanswered() {
+  const i = WORDS.findIndex(w => !state.answers[w.w] || !state.answers[w.w].want);
+  return i < 0 ? WORDS.length : i;
+}
+
+function card(i) {
+  const w = WORDS[i];
+  const a = state.answers[w.w] || (state.answers[w.w] = {});
+  const setFam = f => { a.fam = f; save(); render(); };
+  const setWant = v => { a.want = v; save(); go(i + 1); };
+
+  const step1 = h('div', { class: 'options' },
+    h('p', { class: 'q' }, 'Czy znasz to słowo?'),
+    FAMILIAR.map(([k, label]) => h('button', { class: 'btn' + (a.fam === k ? ' chosen' : ''), type: 'button', 'aria-pressed': String(a.fam === k), onclick: () => setFam(k) }, label)));
+
+  const step2 = a.fam ? h('div', { class: 'options' },
+    h('p', { class: 'meaning' }, w.pl),
+    state.en ? h('p', { class: 'en', lang: 'en' }, w.en) : null,
+    a.fam === 'new' ? null : h('label', { class: 'check' },
+      h('input', { type: 'checkbox', id: `other-${i}`, checked: !!a.other, onchange: e => { a.other = e.target.checked; save(); } }),
+      'Myślałam, że znaczy coś innego'),
+    h('p', { class: 'q' }, 'Chcesz tego słowa używać?'),
+    h('div', { class: 'row' },
+      h('button', { class: 'btn' + (a.want === 'yes' ? ' chosen' : ''), type: 'button', onclick: () => setWant('yes') }, 'Tak, chętnie'),
+      h('button', { class: 'btn' + (a.want === 'no' ? ' chosen' : ''), type: 'button', onclick: () => setWant('no') }, 'Nie dla mnie')),
+  ) : null;
+
+  return h('div', { style: 'display:flex;flex-direction:column;gap:16px' },
+    h('div', { class: 'top' },
+      h('p', { class: 'brand' }, 'Słowa na próbę'),
+      h('p', { class: 'count' }, `${i + 1} / ${WORDS.length}`)),
+    h('div', { class: 'bar', 'aria-hidden': 'true' }, h('span', { style: `width:${(i / WORDS.length) * 100}%` })),
+    h('article', { class: 'card', lang: 'pl' }, h('p', { class: 'word' }, w.w), step1, step2),
+    h('div', { class: 'row' },
+      i > 0 ? h('button', { class: 'btn link', type: 'button', onclick: () => go(i - 1) }, 'Wstecz') : null),
+  );
+}
+
+const FAM_LABEL = Object.fromEntries(FAMILIAR);
+
+function resultsText() {
+  const lines = ['Słowa na próbę: wyniki', ''];
+  for (const w of WORDS) {
+    const a = state.answers[w.w] || {};
+    lines.push(`${w.w}: ${FAM_LABEL[a.fam] || '-'} / ${a.want === 'yes' ? 'chcę używać' : a.want === 'no' ? 'nie dla mnie' : '-'}${a.other ? ' / myślałam, że znaczy coś innego' : ''}`);
+  }
+  if (state.note.trim()) lines.push('', 'Uwagi: ' + state.note.trim());
+  return lines.join('\n');
+}
+
+function done() {
+  const want = WORDS.filter(w => state.answers[w.w]?.want === 'yes');
+  const msg = h('p', { class: 'small muted', role: 'status' });
+  const note = h('textarea', { id: 'note', rows: '3', placeholder: 'Np. więcej słów z polityki, mniej z prawa…', oninput: e => { state.note = e.target.value; save(); } }, state.note);
+  return h('section', { class: 'card' },
+    h('h1', {}, 'Dziękuję!'),
+    want.length
+      ? [h('p', {}, `Słowa, których chcesz używać (${want.length}):`),
+         h('ul', { class: 'summary' }, want.map(w => h('li', {}, h('b', {}, w.w), h('span', { class: 'muted small' }, w.pl.split(';')[0]))))]
+      : h('p', {}, 'Żadne z tych słów Cię nie przekonało. To też jest bardzo przydatna informacja.'),
+    h('label', { for: 'note', class: 'q' }, 'Jakich słów brakuje? Co było ciekawe, a co nudne?'),
+    note,
+    h('button', { class: 'btn primary', type: 'button', onclick: async () => {
+      const text = resultsText();
+      try { await navigator.clipboard.writeText(text); msg.textContent = 'Skopiowano. Wklej to w wiadomości do Eliny.'; }
+      catch { box.hidden = false; box.value = text; box.select(); msg.textContent = 'Zaznaczyłam tekst poniżej. Skopiuj go i wklej w wiadomości do Eliny.'; }
+    } }, 'Skopiuj wyniki dla Eliny'),
+    msg,
+    (box = h('textarea', { id: 'results', rows: '6', readonly: true, hidden: true })),
+    h('button', { class: 'btn link', type: 'button', onclick: () => go(0) }, 'Przejrzyj odpowiedzi jeszcze raz'),
+  );
+}
+let box;
+
+function footer() {
+  return h('div', { class: 'foot muted' },
+    h('span', {}, 'Postęp zapisuje się w tej przeglądarce.'),
+    h('button', { class: 'btn link', type: 'button', onclick: () => { state.en = !state.en; save(); render(); } }, state.en ? 'Hide English' : 'English'));
+}
+
+render();
+</script>
+
+</body>
+</html>
