@@ -35,6 +35,17 @@ then open http://localhost:8000.
 
 Never change a word's `id` after Marta has seen it: saved progress refers to words by id.
 
+## Publishing (Netlify)
+
+Netlify builds the site from this private repository on every push to `main`
+(`netlify.toml`). It runs `tools/build_site.py`, which copies only the app files into `dist/`:
+
+- `/` the 40-word calibration test for Marta
+- `/prototype-1/` the daily-words prototype
+
+Nothing else is published: not `data/lexicon.csv`, not the docs, not the PDF. To publish a new
+file, add it to the `FILES` list in `tools/build_site.py`.
+
 ## Testing as a new user
 
 Ustawienia → Zacznij od nowa clears progress in this browser.

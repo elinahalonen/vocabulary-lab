@@ -1,0 +1,10 @@
+# Netlify publishes only dist/, which tools/build_site.py assembles.
+[build]
+  command = "python3 tools/build_site.py"
+  publish = "dist"
+
+# Keep the site out of search engines; it is for Marta, not the public.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"

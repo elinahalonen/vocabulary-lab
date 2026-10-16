@@ -3,6 +3,15 @@
 Each entry says whose voice it is: **[Marta]** said it, **[Elina]** decided it, **[AI]** suggested it
 and it is not yet agreed. Newest first.
 
+## 2026-10-16: Hosting
+
+**[Elina]** Host on Netlify, deploying from this private repository. **[AI]** reasons: GitHub
+Pages on a free plan needs a public repository, and this one holds the dictionary-derived lexicon
+(and the PDF in its history). Netlify publishes only `dist/`, built by `tools/build_site.py` from
+an explicit file list, so the boundary between private research data and the public app is in
+one place. The site sends `noindex` so search engines skip it. Marta has no Claude account, so the
+calibration test is served from Netlify rather than as a Claude artifact.
+
 ## 2026-10-16: What kind of words
 
 **[Marta]**, by WhatsApp, replying to Elina's question "what counts as a foreign-origin word?":
