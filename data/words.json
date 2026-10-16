@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "notes": "All definitions and examples are AI-drafted originals, not copied from any dictionary. Every entry has verification.status = \"ai_draft\" until a person checks it against WSJP or SJP PWN. provenance says where the word came from: \"marta_example\" = named in the discovery conversation, \"ai_suggested\" = proposed by the assistant.",
+  "notes": "All definitions and examples are AI-drafted originals, not copied from any dictionary. Every entry has verification.status = \"ai_draft\" until a person checks it against WSJP or SJP PWN. provenance says where the word came from. All 33 are \"ai_suggested\": the six words once labelled as Marta's examples were introduced by ChatGPT, not by Marta.",
   "words": [
     {
       "id": "adekwatny",
@@ -19,7 +19,7 @@
       ],
       "origin": { "lang": "la", "etymon": "adaequatus", "gloss": "zrównany, dopasowany" },
       "related": { "synonyms": ["stosowny", "odpowiedni"], "antonyms": ["nieadekwatny"], "derived": ["adekwatność", "adekwatnie"] },
-      "provenance": "marta_example",
+      "provenance": "ai_suggested",
       "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
     },
     {
@@ -39,7 +39,7 @@
       ],
       "origin": { "lang": "la", "etymon": "ambi- + valens", "gloss": "z obu stron + mający siłę", "note": "Pojęcie ambiwalencji wprowadził do psychiatrii Eugen Bleuler na początku XX wieku." },
       "related": { "synonyms": ["dwojaki", "niejednoznaczny"], "antonyms": [], "derived": ["ambiwalencja"] },
-      "provenance": "marta_example",
+      "provenance": "ai_suggested",
       "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
     },
     {
@@ -60,7 +60,7 @@
       ],
       "origin": { "lang": "la", "etymon": "consternatio", "gloss": "przerażenie, osłupienie", "note": "Po łacinie słowo oznaczało silny lęk; po polsku chodzi raczej o zakłopotanie." },
       "related": { "synonyms": ["zmieszanie", "zakłopotanie", "osłupienie"], "antonyms": [], "derived": ["skonsternowany"] },
-      "provenance": "marta_example",
+      "provenance": "ai_suggested",
       "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
     },
     {
@@ -81,7 +81,7 @@
       ],
       "origin": { "lang": "grc", "etymon": "parádoxos", "gloss": "sprzeczny z przyjętym mniemaniem", "note": "Od para ‘wbrew’ i doxa ‘mniemanie’." },
       "related": { "synonyms": [], "antonyms": [], "derived": ["paradoksalny", "paradoksalnie"] },
-      "provenance": "marta_example",
+      "provenance": "ai_suggested",
       "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
     },
     {
@@ -101,7 +101,7 @@
       ],
       "origin": { "lang": "grc", "etymon": "pragmatikós", "gloss": "dotyczący spraw i czynów", "note": "W językoznawstwie pragmatyka to dział badający, jak używamy języka w konkretnych sytuacjach." },
       "related": { "synonyms": ["praktyczny", "rzeczowy"], "antonyms": [], "derived": ["pragmatyzm", "pragmatyk", "pragmatyczka"] },
-      "provenance": "marta_example",
+      "provenance": "ai_suggested",
       "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
     },
     {
@@ -123,7 +123,7 @@
       "origin": { "lang": "la", "etymon": "exaltatio", "gloss": "wywyższenie, uniesienie" },
       "note": "Fałszywy przyjaciel: angielskie exaltation ma zwykle pozytywny sens, a polska egzaltacja jest krytyczna.",
       "related": { "synonyms": ["afektacja", "przesada"], "antonyms": [], "derived": ["egzaltowany"] },
-      "provenance": "marta_example",
+      "provenance": "ai_suggested",
       "verification": { "status": "ai_draft", "checkedBy": null, "checkedAgainst": null, "checkedOn": null }
     },
     {
