@@ -3,6 +3,15 @@
 Each entry says whose voice it is: **[Marta]** said it, **[Elina]** decided it, **[AI]** suggested it
 and it is not yet agreed. Newest first.
 
+## 2026-10-17: Hosting, take two (pending)
+
+Netlify built and published the site, but every attempt to make it public (or to trigger a
+deploy) returned "Access Denied", including after the first successful deploy. **[AI]** proposal,
+agreed in principle by **[Elina]**: publish the built `dist/` to a separate public GitHub
+repository served by GitHub Pages; `vocabulary-lab` stays private. Next steps: Elina creates the
+empty public repository and gives the Claude GitHub App access; Claude pushes `dist/` and adds a
+one-command publish script; `netlify.toml` is then removed.
+
 ## 2026-10-16: Hosting
 
 **[Elina]** Host on Netlify, deploying from this private repository. **[AI]** reasons: GitHub
