@@ -6,7 +6,10 @@ and it is not yet agreed. Newest first.
 ## 2026-10-17: Hosting, take two (pending)
 
 Netlify built and published the site, but every attempt to make it public (or to trigger a
-deploy) returned "Access Denied", including after the first successful deploy. **[AI]** proposal,
+deploy) returned "Access Denied", including after the first successful deploy. The next login
+showed "Your account has been suspended", which explains the errors: the suspension, not the
+settings, was blocking every change. Likely an automated abuse check on a brand-new account
+(unconfirmed). Elina sent a support request on 2026-10-17 and wants to keep trying Netlify. **[AI]** proposal,
 agreed in principle by **[Elina]**: publish the built `dist/` to a separate public GitHub
 repository served by GitHub Pages; `vocabulary-lab` stays private. Next steps: Elina creates the
 empty public repository and gives the Claude GitHub App access; Claude pushes `dist/` and adds a
